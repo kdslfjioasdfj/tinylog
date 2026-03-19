@@ -16,13 +16,17 @@ extern "C" {
 #endif // _MSC_VER || __cplusplus
 
 #ifdef _WIN32
+#ifdef TINYLOG_CONFIG_SHARED
 #ifdef TINYLOG_CONFIG_BUILDING
 #define TINYLOG_PUBLIC_API __declspec(dllexport)
 #else
 #define TINYLOG_PUBLIC_API __declspec(dllimport)
 #endif // TINYLOG_CONFIG_BUILDING
 #else
-#define TINYLOG_PUBLIC_API // Not needed outside of Windows
+#define TINYLOG_PUBLIC_API // Not needed on Windows static builds (.lib)
+#endif                     // TINYLOG_CONFIG_SHARED
+#else
+#define TINYLOG_PUBLIC_API // Not needed outside Windows
 #endif                     // _WIN32
 
 #ifndef TINYLOG_MESSAGE_SIZE

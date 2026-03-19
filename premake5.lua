@@ -50,8 +50,10 @@ newoption({
 project("tinylog")
 if _OPTIONS["shared"] then
 	kind("SharedLib")
+	defines({ "TINYLOG_CONFIG_SHARED" })
 	filter({ "system:not windows" })
 	buildoptions({ "-fPIC" })
+	filter({}) -- Clear filters
 else
 	kind("StaticLib")
 end
