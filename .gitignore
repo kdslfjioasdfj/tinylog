@@ -1,0 +1,102 @@
+# Compiled object files
+*.o
+*.obj
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Libraries
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.bin
+
+# Temporary files
+*~
+*.swp
+*.swo
+
+# Debug files
+*.dSYM/
+*.dmp
+*.stackdump
+
+# IDE/Editor settings
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-workspace
+*.sublime-project
+
+# Build directories
+/build/
+*/build/
+Debug/
+Release/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Logs
+*.log
+
+# Coverage files
+*.gcda
+*.gcno
+*.gcov
+
+# Other
+*.DS_Store
+Thumbs.db
+
+# Make Build artefacts
+Makefile
+Makefile.*
+*.mk
+*.d
+
+# CMake Build artefacts
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.cmake
+CTestTestfile.cmake
+build/
+
+# Ninja Build artefacts
+build.ninja
+*.ninja
+.ninja_*
+
+# Meson Build artefacts
+meson.build
+meson-private/
+build/
+*.wrap
+
+# Autotools Build arefacts
+config.log
+config.status
+configure
+*.lo
+*.la
+
+# Generic Build artefacts
+Debug/
+Release/
+out/
+bin/
+obj/
+
+# LSP artefacts
+.cache/
+compile_commands.json
